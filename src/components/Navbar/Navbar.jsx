@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import logo from '../../assets/shared/logo.svg';
-import burgerLogo from '../../assets/shared/icon-hamburger.svg'
-import burgerLogoClose from '../../assets/shared/icon-close.svg'
+import burgerLogo from '../../assets/shared/icon-hamburger.svg';
+import burgerLogoClose from '../../assets/shared/icon-close.svg';
 import { useState } from 'react';
 
 const Menu = () => (
@@ -36,18 +36,25 @@ const Navbar = () => {
         <Menu />
       </div>
       <div className="navbar__links-smallcreen">
-        {toggleMenu 
-          ? <img src={burgerLogoClose} alt="menu icon" onClick={() => setToggleMenu(false)} />
-          : <img src={burgerLogo} alt="menu icon" onClick={() => setToggleMenu(true)} />
-        }
+        {toggleMenu ? (
+          <img
+            src={burgerLogoClose}
+            alt="menu icon"
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <img
+            src={burgerLogo}
+            alt="menu icon"
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
 
         {toggleMenu && (
           <div className="navbar__links-smallscreen_menu slide-left">
             <Menu />
           </div>
-
         )}
-
       </div>
     </div>
   );
