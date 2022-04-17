@@ -1,0 +1,51 @@
+/*==================== GOOGLE FONTS ====================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+/*==================== VARIABLES SCSS ====================*/
+:root {
+  /*========== Colors ==========*/
+  /* HSL color mode */
+  --first-color: hsl(230, 35%, 7%);
+  --second-color: hsl(231, 77%, 90%);
+  --title-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  --heading-font: 'Bellefair', serif;
+  --main-font: 'Barlow Condensed', sans-serif;
+  --test-body-font: 'Barlow', sans-serif;
+
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+}
+
+h5 {
+  font-family: var(--main-font);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.subheading1 {
+  font-family: var(--heading-font);
+  font-size: 28px;
+}
+
+.subheading2 {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+.nav__text {
+  font-family: var(--main-font);
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
