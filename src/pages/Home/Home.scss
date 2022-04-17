@@ -1,6 +1,33 @@
 .home__container {
   background-image: url(../../assets/home/background-home-desktop.jpg);
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // background-size: cover;
+  background-position: center;
+  height: calc(100vh - 177px);
   width: 100%;
-  padding-top: 100px;
+  padding-top: 177px;
+}
+
+@media screen and (max-width: 1940px) {
+  .home__container {
+    padding-top: 137px;
+    height: calc(100vh - 137px);
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .home__container {
+    background-image: url(../../assets/home/background-home-tablet.jpg);
+    padding-top: 97px;
+    height: calc(100vh - 97px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home__container {
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+    padding-top: 100px;
+    height: calc(100vh - 100px);
+  }
 }
