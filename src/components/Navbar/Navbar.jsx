@@ -7,23 +7,23 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => (
   <ul>
-    <NavLink to="/" activeclassname="active" >
+    <NavLink to="/" activeclassname="active">
       <li className="uppercase">
         <span className="numbers">00</span> Home
       </li>
     </NavLink>
-    <NavLink to="/destination" activeclassname="active" >
+    <NavLink to="/destination" activeclassname="active">
       <li className="uppercase">
         <span className="numbers">01</span> Destination
       </li>
     </NavLink>
     <NavLink to="/crew">
-      <li className="uppercase" activeclassname="active" >
+      <li className="uppercase" activeclassname="active">
         <span className="numbers">02</span> Crew
       </li>
     </NavLink>
     <NavLink to="/technology">
-      <li className="uppercase" activeclassname="active" >
+      <li className="uppercase" activeclassname="active">
         <span className="numbers">03</span> Technology
       </li>
     </NavLink>

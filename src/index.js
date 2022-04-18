@@ -5,8 +5,8 @@ import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Destination from './pages/Destination/Destination';
-import Crew from './pages/Crew/Crew'
-import Technology from './pages/Technology/Technology'
+import Crew from './pages/Crew/Crew';
+import Technology from './pages/Technology/Technology';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
