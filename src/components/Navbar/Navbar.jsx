@@ -3,30 +3,30 @@ import logo from '../../assets/shared/logo.svg';
 import burgerLogo from '../../assets/shared/icon-hamburger.svg';
 import burgerLogoClose from '../../assets/shared/icon-close.svg';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => (
   <ul>
-    <Link to="/">
+    <NavLink to="/" activeclassname="active" >
       <li className="uppercase">
         <span className="numbers">00</span> Home
       </li>
-    </Link>
-    <Link to="/destination">
+    </NavLink>
+    <NavLink to="/destination" activeclassname="active" >
       <li className="uppercase">
         <span className="numbers">01</span> Destination
       </li>
-    </Link>
-    <Link to="/crew">
-      <li className="uppercase">
+    </NavLink>
+    <NavLink to="/crew">
+      <li className="uppercase" activeclassname="active" >
         <span className="numbers">02</span> Crew
       </li>
-    </Link>
-    <Link to="/technology">
-      <li className="uppercase">
+    </NavLink>
+    <NavLink to="/technology">
+      <li className="uppercase" activeclassname="active" >
         <span className="numbers">03</span> Technology
       </li>
-    </Link>
+    </NavLink>
   </ul>
 );
 
