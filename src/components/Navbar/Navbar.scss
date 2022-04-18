@@ -42,6 +42,25 @@
     line-height: 19px;
     letter-spacing: 2.7px;
     color: #ffffff;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      bottom: -38px;
+      width: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: 0.2s;
+      background-color: var(--title-color);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   span {
@@ -56,7 +75,6 @@
   display: none;
 }
 
-// TODO: ADD EFFECT TO LINKS
 // TODO: CREATE LINKS WITH ROUTER
 
 @media screen and (max-width: 1940px) {
@@ -147,6 +165,7 @@
       margin-left: 32px;
       margin-bottom: 32px;
       font-weight: 400;
+      cursor: pointer;
 
       &:first-child {
         margin-top: 118px;
