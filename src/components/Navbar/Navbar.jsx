@@ -44,6 +44,7 @@ const Navbar = () => {
       <div className="navbar__links">
         <Menu />
       </div>
+
       <div className="navbar__links-smallcreen">
         {toggleMenu ? (
           <img
