@@ -1,9 +1,22 @@
 .destination__container {
-  background-image: url(../../assets/destination/background-destination-desktop.jpg);
-  width: calc(100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
+  width: calc(100% - 330px);
+  padding-left: 165px;
+  padding-right: 165px;
+
+  h5 {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: var(--title-color);
+  }
+
+  h5 span {
+    font-weight: 700;
+    opacity: 0.25;
+  }
 }
 
 @media screen and (max-width: 1940px) {
@@ -14,12 +27,12 @@
 
 @media screen and (max-width: 880px) {
   .destination__container {
-    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+    background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
   }
 }
 
 @media screen and (max-width: 550px) {
   .destination__container {
-    background-image: url(../../assets/destination/background-destination-mobile.jpg);
+    background-image: url(../../../public/assets/destination/background-destination-mobile.jpg);
   }
 }
