@@ -195,6 +195,7 @@ nav {
 @media screen and (max-width: 880px) {
   .destination__container {
     background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
+    background-attachment: fixed;
     padding-top: 230px;
     height: calc(100vh - 230px);
   }
