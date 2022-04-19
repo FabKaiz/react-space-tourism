@@ -15,11 +15,19 @@ const Destination = () => {
           <h5 className="uppercase">
             <span>01</span> Pick your destination
           </h5>
-          <img src={images.png} alt={name} />
+          <img src={images.webp} alt={name} />
         </div>
         <div className="destination__content-right">
           <nav>
-            <li>{name}</li>
+            {destinations.map((destination, index) => (
+              <li
+                onClick={() => setValue(index)}
+                key={index}
+                className={`uppercase ${index === value ? 'active' : ''}`}
+              >
+                {destination.name}
+              </li>
+            ))}
           </nav>
 
           <h1 className="uppercase">{name}</h1>
