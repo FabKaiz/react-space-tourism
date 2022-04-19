@@ -212,8 +212,6 @@ nav {
 
     h5 {
       margin: 0;
-      text-align: left;
-      justify-content: flex-end;
       position: absolute;
       left: 76px;
       top: 136px;
@@ -261,5 +259,73 @@ nav {
 @media screen and (max-width: 550px) {
   .destination__container {
     background-image: url(../../../public/assets/destination/background-destination-mobile.jpg);
+    background-attachment: fixed;
+    height: max-content;
+    min-height: calc(100vh - 139px);
+    padding-top: 139px;
+  }
+
+  .destination__content-container {
+    flex-direction: column;
+  }
+
+  .destination__content-left {
+    img {
+      height: 170px;
+      width: 170px;
+    }
+
+    h5 {
+      margin: 0;
+      position: absolute;
+      left: 0;
+      transform: translateX(calc(50% - 18px));
+      top: 88px;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+
+      span {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  .destination__content-right {
+    margin-top: 26px;
+    padding: 0 24px;
+
+    nav {
+      li {
+        margin-right: 26px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &::after {
+          bottom: -8px;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 64px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .info {
+    flex-direction: column;
   }
 }

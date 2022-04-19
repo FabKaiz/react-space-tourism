@@ -73,7 +73,10 @@ h5 {
 
   @media screen and (max-width: 550px) {
     .background__img {
+      background-attachment: fixed;
+      height: max-content;
       padding-top: 100px;
+      min-height: calc(100vh - 100px);
       height: calc(100vh - 100px);
     }
   }

@@ -5,6 +5,7 @@
   align-items: center;
   color: var(--title-color);
   justify-content: flex-end;
+  z-index: 2;
 }
 
 .navbar__logo {
@@ -140,7 +141,10 @@
     margin: 24px;
 
     img {
-      z-index: 99;
+      z-index: 1;
+      position: relative;
+      cursor: pointer;
+      padding: 1rem;
     }
   }
 
@@ -152,7 +156,6 @@
     top: 0;
     height: 100vh;
     width: 70%;
-    z-index: -1;
     transition: 0.6s;
 
     ul {

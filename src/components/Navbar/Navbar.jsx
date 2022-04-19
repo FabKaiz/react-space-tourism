@@ -5,32 +5,32 @@ import burgerLogoClose from '../../assets/shared/icon-close.svg';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Menu = () => (
-  <ul>
-    <NavLink to="/" activeclassname="active">
-      <li className="uppercase">
-        <span className="numbers">00</span> Home
-      </li>
-    </NavLink>
-    <NavLink to="/destination" activeclassname="active">
-      <li className="uppercase">
-        <span className="numbers">01</span> Destination
-      </li>
-    </NavLink>
-    <NavLink to="/crew">
-      <li className="uppercase" activeclassname="active">
-        <span className="numbers">02</span> Crew
-      </li>
-    </NavLink>
-    <NavLink to="/technology">
-      <li className="uppercase" activeclassname="active">
-        <span className="numbers">03</span> Technology
-      </li>
-    </NavLink>
-  </ul>
-);
 
 const Navbar = () => {
+  const Menu = () => (
+    <ul>
+      <NavLink to="/" activeclassname="active" onClick={() => setToggleMenu(false)}>
+        <li className="uppercase">
+          <span className="numbers">00</span> Home
+        </li>
+      </NavLink>
+      <NavLink to="/destination" activeclassname="active" onClick={() => setToggleMenu(false)}>
+        <li className="uppercase">
+          <span className="numbers">01</span> Destination
+        </li>
+      </NavLink>
+      <NavLink to="/crew" activeclassname="active" onClick={() => setToggleMenu(false)}>
+        <li className="uppercase">
+          <span className="numbers">02</span> Crew
+        </li>
+      </NavLink>
+      <NavLink to="/technology" activeclassname="active" onClick={() => setToggleMenu(false)}>
+        <li className="uppercase">
+          <span className="numbers">03</span> Technology
+        </li>
+      </NavLink>
+    </ul>
+  );
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
