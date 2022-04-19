@@ -107,6 +107,10 @@ nav {
     &:hover::after {
       width: 100%;
     }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   li.active {
@@ -173,11 +177,83 @@ nav {
 }
 
 @media screen and (max-width: 1230px) {
+  .destination__container {
+    width: calc(100%);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .destination__content-left {
+    margin-right: 0;
+  }
+
+  .destination__content-right {
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 880px) {
   .destination__container {
     background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
+    padding-top: 230px;
+    height: calc(100vh - 230px);
+  }
+
+  .destination__content-container {
+    flex-direction: column;
+  }
+
+  .destination__content-left {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+
+    h5 {
+      margin: 0;
+      text-align: left;
+      justify-content: flex-end;
+      position: absolute;
+      left: 76px;
+      top: 136px;
+    }
+  }
+
+  .destination__content-right {
+    margin-top: 53px;
+
+    nav {
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 80px;
+      line-height: 92px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 49px;
+    }
+  }
+
+  .info {
+    .subheading2 {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    .subheading1 {
+      font-size: 28px;
+      line-height: 32px;
+      text-align: center;
+    }
   }
 }
 
