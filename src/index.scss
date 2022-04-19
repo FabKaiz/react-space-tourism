@@ -50,6 +50,35 @@ h5 {
   letter-spacing: 2.7px;
 }
 
+.background__img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: calc(100vh - 177px);
+  padding-top: 177px;
+
+  @media screen and (max-width: 1940px) {
+    .background__img {
+      padding-top: 137px;
+      height: calc(100vh - 137px);
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    .background__img {
+      padding-top: 97px;
+      height: calc(100vh - 97px);
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .background__img {
+      padding-top: 100px;
+      height: calc(100vh - 100px);
+    }
+  }
+}
+
 .slide-left {
   -webkit-animation: slide-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

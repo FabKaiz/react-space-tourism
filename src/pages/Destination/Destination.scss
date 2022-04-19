@@ -1,0 +1,25 @@
+.destination__container {
+  background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  width: calc(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1940px) {
+}
+
+@media screen and (max-width: 1230px) {
+}
+
+@media screen and (max-width: 880px) {
+  .destination__container {
+    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .destination__container {
+    background-image: url(../../assets/destination/background-destination-mobile.jpg);
+  }
+}

@@ -1,10 +1,18 @@
-import React from 'react'
-import './Destination.scss'
+import React from 'react';
+import './Destination.scss';
 
 const Destination = () => {
   return (
-    <div>Destination</div>
-  )
-}
+    <div className="destination__container background__img">
+      <div className="destination__content-left">
+     
+      </div>
 
-export default Destination
+      <div className="destination__content-right">
+
+      </div>
+    </div>
+  );
+};
+
+export default Destination;

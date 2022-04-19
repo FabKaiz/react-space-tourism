@@ -3,7 +3,7 @@ import './Home.scss';
 
 const Home = () => {
   return (
-    <div className="home__container">
+    <div className="home__container background__img">
       <div className="home__content-left">
         <h5 className="uppercase">So, you want to travel to</h5>
         <h1 className="uppercase">Space</h1>

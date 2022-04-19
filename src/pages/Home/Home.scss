@@ -1,11 +1,6 @@
 .home__container {
   background-image: url(../../assets/home/background-home-desktop.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  height: calc(100vh - 177px);
   width: calc(100% - 330px);
-  padding-top: 177px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,13 +55,6 @@
   }
 }
 
-@media screen and (max-width: 1940px) {
-  .home__container {
-    padding-top: 137px;
-    height: calc(100vh - 137px);
-  }
-}
-
 @media screen and (max-width: 1230px) {
   .home__container {
     justify-content: space-between;
@@ -83,8 +71,6 @@
 @media screen and (max-width: 880px) {
   .home__container {
     background-image: url(../../assets/home/background-home-tablet.jpg);
-    padding-top: 97px;
-    height: calc(100vh - 97px);
     flex-direction: column;
     justify-content: center;
   }
@@ -118,8 +104,6 @@
 @media screen and (max-width: 550px) {
   .home__container {
     background-image: url(../../assets/home/background-home-mobile.jpg);
-    padding-top: 100px;
-    height: calc(100vh - 100px);
   }
 
   .home__content-left {
