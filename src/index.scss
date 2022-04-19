@@ -14,14 +14,16 @@
   --heading-font: 'Bellefair', serif;
   --main-font: 'Barlow Condensed', sans-serif;
   --test-body-font: 'Barlow', sans-serif;
-
 }
 
 body {
   margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--heading-font);
 }
 
@@ -83,29 +85,29 @@ h5 {
 }
 
 .slide-left {
-  -webkit-animation: slide-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -113,6 +115,7 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
 }

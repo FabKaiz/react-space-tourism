@@ -5,26 +5,41 @@ import burgerLogoClose from '../../assets/shared/icon-close.svg';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => {
   const Menu = () => (
     <ul>
-      <NavLink to="/" activeclassname="active" onClick={() => setToggleMenu(false)}>
+      <NavLink
+        to="/"
+        activeclassname="active"
+        onClick={() => setToggleMenu(false)}
+      >
         <li className="uppercase">
           <span className="numbers">00</span> Home
         </li>
       </NavLink>
-      <NavLink to="/destination" activeclassname="active" onClick={() => setToggleMenu(false)}>
+      <NavLink
+        to="/destination"
+        activeclassname="active"
+        onClick={() => setToggleMenu(false)}
+      >
         <li className="uppercase">
           <span className="numbers">01</span> Destination
         </li>
       </NavLink>
-      <NavLink to="/crew" activeclassname="active" onClick={() => setToggleMenu(false)}>
+      <NavLink
+        to="/crew"
+        activeclassname="active"
+        onClick={() => setToggleMenu(false)}
+      >
         <li className="uppercase">
           <span className="numbers">02</span> Crew
         </li>
       </NavLink>
-      <NavLink to="/technology" activeclassname="active" onClick={() => setToggleMenu(false)}>
+      <NavLink
+        to="/technology"
+        activeclassname="active"
+        onClick={() => setToggleMenu(false)}
+      >
         <li className="uppercase">
           <span className="numbers">03</span> Technology
         </li>
