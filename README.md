@@ -1,14 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Space tourism React
 
 `Space Tourism` is a [Frontend Mentor](https://www.frontendmentor.io/home) challenge that i reproduce with React, React router, Sass, ReactTransitionGroup, Framer Motion and more.
 
 Try the challenge and download the figma [here](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
-`[See the results](https://google.com)` 
+### `See the results ->` [HERE](https://google.com)
 
 ## Available Scripts
 
