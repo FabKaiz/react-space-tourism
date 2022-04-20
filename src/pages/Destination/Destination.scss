@@ -3,7 +3,6 @@
   width: calc(100% - 330px);
   padding-left: 165px;
   padding-right: 165px;
-  // overflow: hidden;
 
   h5 {
     font-family: var(--main-font);
@@ -25,7 +24,7 @@
 .destination__content-container {
   display: flex;
   justify-content: space-evenly;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .destination__content-left {
