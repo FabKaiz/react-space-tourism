@@ -3,8 +3,7 @@ import './Destination.scss';
 import Data from '../../data/data.json';
 
 import { motion } from 'framer-motion';
-import { CSSTransition } from 'react-transition-group';
-import { SwitchTransition } from 'react-transition-group';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 const Destination = () => {
   const [destinations] = useState(Data.destinations);
