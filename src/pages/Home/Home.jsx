@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './Home.scss';
 
 import { motion } from 'framer-motion';
+import Copyright from '../../components/Copyright/Copyright';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
             <div className="button__home uppercase">Explore</div>
           </Link>
         </div>
+        <Copyright />
       </div>
     </motion.div>
   );

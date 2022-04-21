@@ -58,10 +58,13 @@ h5 {
 
 .background__img {
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  height: calc(100vh - 137px);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 137px);
   padding-top: 137px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
 
   @media screen and (max-width: 1940px) {
     .background__img {
@@ -160,6 +163,104 @@ body::-webkit-scrollbar {
   align-items: flex-end;
 }
 
+.copyright {
+  position: absolute;
+  bottom: -45px;
+  right: 50%;
+  transform: translateX(50%);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8.5px);
+  padding: 5px 25px 5px;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 3.5px;
+  font-family: var(--description-font);
+  text-transform: uppercase;
+  color: #ffffff;
+
+  transition: 290ms linear 10ms;
+  animation: shaking 5s linear 3s 4 alternate;
+
+  a {
+    color: rgb(183, 184, 255);
+    letter-spacing: 2px;
+    transition: 300ms;
+
+    &:hover {
+      color: rgb(142, 143, 255);
+      letter-spacing: 4px;
+    }
+  }
+
+  span {
+    position: relative;
+    transition: 300ms;
+    font-size: 22px;
+    top: -34px;
+  }
+
+  .arrow-up {
+    position: absolute;
+    top: -30px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 50px;
+    height: 30px;
+    border-top-left-radius: 510px;
+    border-top-right-radius: 510px;
+    background: rgba(255, 255, 255, 0.04);
+    transition: 300ms;
+  }
+
+  &:hover {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    -webkit-animation: 0;
+    -webkit-animation-name: none;
+    bottom: 0px;
+
+    span {
+      top: 0;
+      font-size: 16px;
+    }
+
+    .arrow-up {
+      top: 0;
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes shaking {
+  0% {
+    bottom: -45px;
+  }
+  3% {
+    bottom: -40px;
+  }
+  6% {
+    bottom: -45px;
+  }
+  9% {
+    bottom: -40px;
+  }
+  12% {
+    bottom: -45px;
+  }
+  15% {
+    bottom: -40px;
+  }
+  18% {
+    bottom: -45px;
+  }
+  100% {
+    bottom: -45px;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   .container {
     h5 {
@@ -195,12 +296,23 @@ body::-webkit-scrollbar {
   .container {
     background-attachment: fixed;
     padding-top: 136px;
-    height: calc(100vh - 136px);
+    min-height: calc(100vh - 136px);
   }
 
   .content__container {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .copyright {
+    width: fit-content;
+    font-size: 12px;
+
+    span {
+      font-size: 16px;
+    }
   }
 }
 
@@ -225,9 +337,7 @@ body::-webkit-scrollbar {
     }
   }
 
-  
   .content__container {
     flex-direction: column;
   }
-
 }

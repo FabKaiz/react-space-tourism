@@ -4,6 +4,7 @@ import Data from '../../data/data.json';
 
 import { motion } from 'framer-motion';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import Copyright from '../../components/Copyright/Copyright';
 
 const Destination = () => {
   const [destinations] = useState(Data.destinations);
@@ -83,6 +84,7 @@ const Destination = () => {
           </div>
 
         </div>
+        <Copyright />
       </div>
     </motion.div>
   );
