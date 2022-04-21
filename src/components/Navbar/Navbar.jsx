@@ -10,7 +10,7 @@ const Navbar = () => {
   const navRef = useRef(null);
 
   const handleClick = () => {
-    if (!toggleMenu) return; 
+    if (!toggleMenu) return;
     navRef.current.style.width = '20%';
     navRef.current.style.opacity = 0;
     const animationTimer = setTimeout(() => {

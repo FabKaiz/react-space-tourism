@@ -22,13 +22,11 @@ const Destination = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container destination__img background__img">
-
         <h5 className="uppercase">
           <span>01</span> Pick your destination
         </h5>
 
         <div className="content__container">
-
           <div className="destination__content-left">
             <SwitchTransition>
               <CSSTransition
@@ -82,7 +80,6 @@ const Destination = () => {
               </CSSTransition>
             </SwitchTransition>
           </div>
-
         </div>
         <Copyright />
       </div>
