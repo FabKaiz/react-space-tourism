@@ -3,7 +3,9 @@ import './Technology.scss'
 
 const Technology = () => {
   return (
-    <div>Technology</div>
+    <div>
+      
+    </div>
   )
 }
 
