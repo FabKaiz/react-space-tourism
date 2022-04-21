@@ -30,6 +30,7 @@
     margin-bottom: 32px;
     margin-right: 80px;
     background-color: rgba(255, 255, 255, 0);
+    color: #fff;
     transition: border 200ms linear, background-color 400ms linear;
 
     p {
@@ -269,6 +270,49 @@
 @media screen and (max-width: 550px) {
   .technology__img {
     background-image: url(../../../public/assets/technology/background-technology-mobile.jpg);
+
+    h5 {
+      margin: 0;
+    }
+  }
+
+  .technology__content-right {
+    width: fit-content;
+    img {
+      margin: 24px 0;
+      object-fit: cover;
+      max-height: 170px;
+      width: 102vw;
+    }
+  }
+
+  .technology__nav {
+    flex-direction: row;
+    justify-content: center;
+    li {
+      margin-bottom: 26px;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+
+  .technology__content-left {
+    h5 {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 25px;
+      max-width: 90vw;
+    }
   }
 }
 
