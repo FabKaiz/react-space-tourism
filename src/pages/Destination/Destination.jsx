@@ -26,7 +26,7 @@ const Destination = () => {
           <span>01</span> Pick your destination
         </h5>
 
-        <div className="content__container  ">
+        <div className="content__container">
 
           <div className="destination__content-left">
             <SwitchTransition>

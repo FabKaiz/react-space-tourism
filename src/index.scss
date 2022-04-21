@@ -16,6 +16,9 @@
   --test-body-font: 'Barlow', sans-serif;
 }
 
+/* ======== Animations ======== */
+@import './animations/animation.scss';
+
 body {
   margin: 0;
   background-color: #0b0e17;

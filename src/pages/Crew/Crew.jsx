@@ -41,7 +41,7 @@ const Crew = () => {
               <div ref={nodeRefLeft}>
                 <h4 className="uoppercase">{role}</h4>
                 <h1 className="uppercase">{name}</h1>
-                <p className="description">{bio}</p>
+                <p className="bio">{bio}</p>
               </div>
             </CSSTransition>
           </SwitchTransition>
@@ -53,7 +53,7 @@ const Crew = () => {
                 key={index}
                 className={`uppercase ${index === value ? 'active' : ''}`}
               >
-                {crew.name}
+                <div className="crew__nav"></div>
               </li>
             ))}
           </nav>
