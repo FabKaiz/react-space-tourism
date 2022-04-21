@@ -33,13 +33,12 @@ const Technology = () => {
     >
       <div className="container technology__img background__img">
         <h5 className="uppercase">
-          <span>02</span> SPACE LAUNCH 101
+          <span>03</span> SPACE LAUNCH 101
         </h5>
 
         <div className="content__container technology__container">
 
-          <div className="technology__content-left">
-
+          <div className="technology__wrapper">
             <nav className="technology__nav">
               {technology.map((technology, index) => (
                 <li
@@ -49,26 +48,26 @@ const Technology = () => {
                     index === value ? 'technology__active' : ''
                   }`}
                 >
-                  {index + 1}
+                  <p>{index + 1}</p>
                 </li>
               ))}
             </nav>
-
-            <SwitchTransition>
-              <CSSTransition
-                nodeRef={nodeRefLeft}
-                key={value}
-                timeout={500}
-                classNames="slide-left"
-              >
-                <div ref={nodeRefLeft}>
-                  <h5 className="uppercase">THE TERMINOLOGY…</h5>
-                  <h1 className="uppercase">{name}</h1>
-                  <p className="description">{description}</p>
-                </div>
-              </CSSTransition>
-            </SwitchTransition>
-
+            <div className="technology__content-left">
+              <SwitchTransition>
+                <CSSTransition
+                  nodeRef={nodeRefLeft}
+                  key={value}
+                  timeout={500}
+                  classNames="slide-left"
+                >
+                  <div ref={nodeRefLeft}>
+                    <h5 className="uppercase">THE TERMINOLOGY…</h5>
+                    <h1 className="uppercase">{name}</h1>
+                    <p className="description">{description}</p>
+                  </div>
+                </CSSTransition>
+              </SwitchTransition>
+            </div>
           </div>
 
           <div className="technology__content-right">
@@ -81,7 +80,7 @@ const Technology = () => {
               >
                 <div ref={nodeRefRight}>
                   {matches && <img src={images.portrait} alt={name} />}
-                  {!matches && <img src={images.land} alt={name} />}
+                  {!matches && <img src={images.landscape} alt={name} />}
                 </div>
               </CSSTransition>
             </SwitchTransition>
