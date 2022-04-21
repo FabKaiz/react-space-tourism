@@ -2,51 +2,21 @@ import './Navbar.scss';
 import logo from '../../assets/shared/logo.svg';
 import burgerLogo from '../../assets/shared/icon-hamburger.svg';
 import burgerLogoClose from '../../assets/shared/icon-close.svg';
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useRef, useState } from 'react';
+import NavbarMenu from '../NavbarMenu/NavbarMenu';
 
 const Navbar = () => {
-  const Menu = () => (
-    <ul>
-      <NavLink
-        to="/"
-        activeclassname="active"
-        onClick={() => setToggleMenu(false)}
-      >
-        <li className="uppercase">
-          <span className="numbers">00</span> Home
-        </li>
-      </NavLink>
-      <NavLink
-        to="/destination"
-        activeclassname="active"
-        onClick={() => setToggleMenu(false)}
-      >
-        <li className="uppercase">
-          <span className="numbers">01</span> Destination
-        </li>
-      </NavLink>
-      <NavLink
-        to="/crew"
-        activeclassname="active"
-        onClick={() => setToggleMenu(false)}
-      >
-        <li className="uppercase">
-          <span className="numbers">02</span> Crew
-        </li>
-      </NavLink>
-      <NavLink
-        to="/technology"
-        activeclassname="active"
-        onClick={() => setToggleMenu(false)}
-      >
-        <li className="uppercase">
-          <span className="numbers">03</span> Technology
-        </li>
-      </NavLink>
-    </ul>
-  );
   const [toggleMenu, setToggleMenu] = useState(false);
+  const navRef = useRef(null);
+
+  const handleClick = () => {
+    navRef.current.style.width = '20%';
+    navRef.current.style.opacity = 0;
+    const animationTimer = setTimeout(() => {
+      setToggleMenu(false);
+    }, 300);
+    return () => clearTimeout(animationTimer);
+  };
 
   return (
     <div className="navbar__container">
@@ -57,7 +27,7 @@ const Navbar = () => {
       <div className="navbar__line"></div>
 
       <div className="navbar__links">
-        <Menu />
+        <NavbarMenu handleClick={handleClick} />
       </div>
 
       <div className="navbar__links-smallcreen">
@@ -65,7 +35,7 @@ const Navbar = () => {
           <img
             src={burgerLogoClose}
             alt="menu icon"
-            onClick={() => setToggleMenu(false)}
+            onClick={() => handleClick()}
           />
         ) : (
           <img
@@ -76,8 +46,11 @@ const Navbar = () => {
         )}
 
         {toggleMenu && (
-          <div className="navbar__links-smallscreen_menu slide-left">
-            <Menu />
+          <div
+            ref={navRef}
+            className="navbar__links-smallscreen_menu slide-left"
+          >
+            <NavbarMenu handleClick={handleClick} />
           </div>
         )}
       </div>
