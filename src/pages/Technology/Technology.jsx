@@ -5,6 +5,7 @@ import Data from '../../data/data.json';
 
 import { motion } from 'framer-motion';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
+import Copyright from '../../components/Copyright/Copyright';
 
 const Technology = () => {
   const [technology] = useState(Data.technology);
@@ -98,6 +99,7 @@ const Technology = () => {
             </SwitchTransition>
           </div>
         </div>
+        <Copyright />
       </div>
     </motion.div>
   );
