@@ -20,13 +20,13 @@ const Destination = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="destination__container background__img">
+      <div className="container background__img">
 
         <h5 className="uppercase">
           <span>01</span> Pick your destination
         </h5>
 
-        <div className="destination__content-container">
+        <div className="content__container  ">
 
           <div className="destination__content-left">
             <SwitchTransition>
