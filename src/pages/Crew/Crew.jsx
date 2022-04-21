@@ -27,7 +27,7 @@ const Crew = () => {
         <span>02</span> Meet your crew
       </h5>
 
-      <div className="content__container">
+      <div className="content__container crew__container">
 
         <div className="crew__content-left">
 
@@ -39,21 +39,20 @@ const Crew = () => {
               classNames="slide"
             >
               <div ref={nodeRefLeft}>
-                <h4 className="uoppercase">{role}</h4>
+                <h4 className="uppercase">{role}</h4>
                 <h1 className="uppercase">{name}</h1>
                 <p className="bio">{bio}</p>
               </div>
             </CSSTransition>
           </SwitchTransition>
 
-          <nav>
+          <nav className="crew__nav">
             {crew.map((crew, index) => (
               <li
                 onClick={() => setValue(index)}
                 key={index}
-                className={`uppercase ${index === value ? 'active' : ''}`}
+                className={`uppercase crew__nav-dot ${index === value ? 'crew__active' : ''}`}
               >
-                <div className="crew__nav"></div>
               </li>
             ))}
           </nav>
