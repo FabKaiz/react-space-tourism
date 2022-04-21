@@ -1,27 +1,8 @@
 .container {
   background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
-  width: calc(100% - 330px);
-  padding-left: 165px;
-  padding-right: 165px;
-
-  h5 {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
-    color: var(--title-color);
-    margin: 0;
-    margin-top: 70px;
-  }
-
-  h5 span {
-    font-weight: 700;
-    opacity: 0.25;
-  }
 }
 
-.content__container   {
+.content__container {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -186,13 +167,6 @@ nav {
 }
 
 @media screen and (min-width: 2000px) {
-  .container {
-    h5 {
-      font-size: 36px;
-      letter-spacing: 4.725px;
-    }
-  }
-
   .content__container   {
     align-items: center;
   }
@@ -233,23 +207,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 1450px) {
-  .container h5 {
-    margin-top: 0;
-  }
-}
-
 @media screen and (max-width: 1230px) {
-  .container {
-    width: calc(100%);
-    padding-left: 0;
-    padding-right: 0;
-
-    h5 {
-      margin-left: 9vw;
-    }
-  }
-
   .destination__content-left {
     margin-right: 0;
   }
@@ -262,9 +220,6 @@ nav {
 @media screen and (max-width: 880px) {
   .container {
     background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
-    background-attachment: fixed;
-    padding-top: 136px;
-    height: calc(100vh - 136px);
   }
 
   .content__container   {
@@ -325,27 +280,6 @@ nav {
 }
 
 @media screen and (max-width: 550px) {
-  .container {
-    background-image: url(../../../public/assets/destination/background-destination-mobile.jpg);
-    background-attachment: fixed;
-    height: max-content;
-    min-height: calc(100vh - 139px);
-    padding-top: 139px;
-
-    h5 {
-      margin: 0;
-      margin-top: -20px;
-      font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 2.7px;
-      text-align: center;
-
-      span {
-        margin-right: 18px;
-      }
-    }
-  }
-
   .content__container   {
     flex-direction: column;
   }
