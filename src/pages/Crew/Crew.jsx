@@ -21,7 +21,7 @@ const Crew = () => {
     exit={{ opacity: 0 }}
     transition={{ duration: 0.5 }}
   >
-    <div className="container background__img">
+    <div className="container crew__img background__img">
 
       <h5 className="uppercase">
         <span>02</span> Meet your crew

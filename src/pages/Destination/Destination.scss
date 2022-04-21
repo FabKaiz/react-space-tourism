@@ -1,4 +1,4 @@
-.container {
+.destination__img {
   background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
 }
 
@@ -167,7 +167,7 @@ nav {
 }
 
 @media screen and (min-width: 2000px) {
-  .content__container   {
+  .content__container {
     align-items: center;
   }
 
@@ -218,11 +218,11 @@ nav {
 }
 
 @media screen and (max-width: 880px) {
-  .container {
+  .destination__img {
     background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
   }
 
-  .content__container   {
+  .content__container {
     flex-direction: column;
     align-items: center;
   }
@@ -280,7 +280,11 @@ nav {
 }
 
 @media screen and (max-width: 550px) {
-  .content__container   {
+  .destination__img {
+    background-image: url(../../../public/assets/destination/background-destination-mobile.jpg);
+  }
+  
+  .content__container {
     flex-direction: column;
   }
 

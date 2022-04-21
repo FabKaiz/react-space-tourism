@@ -20,7 +20,7 @@ const Destination = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container background__img">
+      <div className="container destination__img background__img">
 
         <h5 className="uppercase">
           <span>01</span> Pick your destination
