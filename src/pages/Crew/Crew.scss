@@ -1,3 +1,21 @@
 .crew__img {
   background-image: url(../../../public/assets/crew/background-crew-desktop.jpg);
 }
+
+@media screen and (min-width: 2000px) {
+}
+
+@media screen and (max-width: 1230px) {
+}
+
+@media screen and (max-width: 880px) {
+  .crew__img {
+    background-image: url(../../../public/assets/crew/background-crew-tablet.jpg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .crew__img {
+    background-image: url(../../../public/assets/crew/background-crew-mobile.jpg);
+  }
+}

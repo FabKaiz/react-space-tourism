@@ -2,12 +2,6 @@
   background-image: url(../../../public/assets/destination/background-destination-desktop.jpg);
 }
 
-.content__container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-
 .destination__content-left {
   margin-right: 145px;
   position: relative;
@@ -167,10 +161,6 @@ nav {
 }
 
 @media screen and (min-width: 2000px) {
-  .content__container {
-    align-items: center;
-  }
-
   .destination__content-left {
     img {
       height: 645px;
@@ -220,11 +210,6 @@ nav {
 @media screen and (max-width: 880px) {
   .destination__img {
     background-image: url(../../../public/assets/destination/background-destination-tablet.jpg);
-  }
-
-  .content__container {
-    flex-direction: column;
-    align-items: center;
   }
 
   .destination__content-left {
@@ -282,10 +267,6 @@ nav {
 @media screen and (max-width: 550px) {
   .destination__img {
     background-image: url(../../../public/assets/destination/background-destination-mobile.jpg);
-  }
-  
-  .content__container {
-    flex-direction: column;
   }
 
   .destination__content-left {
