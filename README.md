@@ -4,7 +4,7 @@
 
 Try the challenge and download the figma [here](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
-### `See the results ->` [HERE](https://google.com)
+### `See the results ->` [HERE](https://space-tourism-react-fabkaiz.netlify.app/)
 
 ## Available Scripts
 
