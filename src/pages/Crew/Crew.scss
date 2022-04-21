@@ -57,7 +57,7 @@
   }
 
   .bio {
-    font-family: var(--main-font);
+    font-family: var(--description-font);
     font-size: 18px;
     line-height: 32px;
     color: var(--second-color);
@@ -85,9 +85,6 @@
   hr {
     display: none;
   }
-}
-
-@media screen and (min-width: 2000px) {
 }
 
 @media screen and (max-width: 1230px) {
