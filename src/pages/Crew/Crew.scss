@@ -81,6 +81,10 @@
     margin-bottom: -6px;
     min-height: 450px;
   }
+
+  hr {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -146,6 +150,7 @@
       font-size: 16px;
       line-height: 28px;
       margin-bottom: 40px;
+      padding: 0 1rem;
     }
 
     .crew__nav {
@@ -178,5 +183,82 @@
 @media screen and (max-width: 550px) {
   .crew__img {
     background-image: url(../../../public/assets/crew/background-crew-mobile.jpg);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .crew__img {
+    padding-top: 88px;
+    min-height: calc(100vh - 88px);
+
+    h5 {
+      margin-left: 0;
+    }
+  }
+
+  .crew__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .crew__content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    hr {
+      display: flex;
+      border: none;
+      width: 80vw;
+      height: 2px;
+      background-color: #383b4b;
+      margin: 0;
+      margin-top: 4px;
+    }
+
+    img {
+      margin-top: 32px;
+      width: 55vw;
+      min-width: 233px;
+      height: auto;
+    }
+  }
+
+  .crew__content-left {
+    position: relative;
+
+    h4 {
+      margin-top: 74px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .bio {
+      font-size: 15px;
+      line-height: 25px;
+      padding: 0 24px;
+      margin-bottom: 0;
+    }
+
+    .crew__nav {
+      position: absolute;
+      top: 32px;
+      right: 50%;
+      transform: translateX(50%);
+      margin: 0;
+    }
   }
 }
