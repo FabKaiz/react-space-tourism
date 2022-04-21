@@ -4,6 +4,7 @@ import './Crew.scss';
 
 import { motion } from 'framer-motion';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
+import Copyright from '../../components/Copyright/Copyright';
 
 const Crew = () => {
   const [crew] = useState(Data.crew);
@@ -71,6 +72,7 @@ const Crew = () => {
             </SwitchTransition>
           </div>
         </div>
+        <Copyright />
       </div>
     </motion.div>
   );
