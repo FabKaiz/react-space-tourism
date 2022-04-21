@@ -13,13 +13,13 @@ const Technology = () => {
   const nodeRefLeft = useRef(null);
 
   const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 880px)").matches
-  )
+    window.matchMedia('(min-width: 880px)').matches
+  );
 
   useEffect(() => {
     window
-    .matchMedia("(min-width: 880px)")
-    .addEventListener('change', e => setMatches( e.matches ));
+      .matchMedia('(min-width: 880px)')
+      .addEventListener('change', (e) => setMatches(e.matches));
   }, []);
 
   const { name, images, description } = technology[value];
@@ -37,9 +37,10 @@ const Technology = () => {
         </h5>
 
         <div className="content__container technology__container">
+
           <div className="technology__content-left">
 
-          <nav className="technology__nav">
+            <nav className="technology__nav">
               {technology.map((technology, index) => (
                 <li
                   onClick={() => setValue(index)}
@@ -47,7 +48,9 @@ const Technology = () => {
                   className={`uppercase technology__nav-dot ${
                     index === value ? 'technology__active' : ''
                   }`}
-                >{index + 1}</li>
+                >
+                  {index + 1}
+                </li>
               ))}
             </nav>
 
@@ -77,8 +80,8 @@ const Technology = () => {
                 classNames="slide"
               >
                 <div ref={nodeRefRight}>
-                  {matches && (<img src={images.portrait} alt={name} />)}
-                  {!matches && (<img src={images.landscape} alt={name} />)}
+                  {matches && <img src={images.portrait} alt={name} />}
+                  {!matches && <img src={images.land} alt={name} />}
                 </div>
               </CSSTransition>
             </SwitchTransition>
