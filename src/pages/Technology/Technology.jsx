@@ -11,6 +11,19 @@ const Technology = () => {
   const [value, setValue] = useState(0);
   const nodeRefRight = useRef(null);
   const nodeRefLeft = useRef(null);
+  const [animationClass, setAnimationClass] = useState('slide-bottom');
+
+  // Set a sliding animation to the bottom if user click a menu number
+  // below the current one otherwise set the animation to the top.
+  const handleClickAndSetAnimationClass = (index) => {
+    index > value
+      ? setAnimationClass('slide-bottom')
+      : setAnimationClass('slide-top');
+
+    setTimeout(() => {
+      setValue(index);
+    }, 1);
+  };
 
   const [matches, setMatches] = useState(
     window.matchMedia('(min-width: 880px)').matches
@@ -37,12 +50,11 @@ const Technology = () => {
         </h5>
 
         <div className="content__container technology__container">
-
           <div className="technology__wrapper">
             <nav className="technology__nav">
               {technology.map((technology, index) => (
                 <li
-                  onClick={() => setValue(index)}
+                  onClick={() => handleClickAndSetAnimationClass(index)}
                   key={index}
                   className={`uppercase technology__nav-dot ${
                     index === value ? 'technology__active' : ''
@@ -58,7 +70,7 @@ const Technology = () => {
                   nodeRef={nodeRefLeft}
                   key={value}
                   timeout={500}
-                  classNames="slide-left"
+                  classNames={animationClass}
                 >
                   <div ref={nodeRefLeft}>
                     <h5 className="uppercase">THE TERMINOLOGY…</h5>
@@ -76,7 +88,7 @@ const Technology = () => {
                 nodeRef={nodeRefRight}
                 key={value}
                 timeout={500}
-                classNames="slide"
+                classNames={animationClass}
               >
                 <div ref={nodeRefRight}>
                   {matches && <img src={images.portrait} alt={name} />}
@@ -85,7 +97,6 @@ const Technology = () => {
               </CSSTransition>
             </SwitchTransition>
           </div>
-
         </div>
       </div>
     </motion.div>
