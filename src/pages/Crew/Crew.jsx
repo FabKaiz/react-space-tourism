@@ -36,7 +36,7 @@ const Crew = () => {
               nodeRef={nodeRefLeft}
               key={value}
               timeout={500}
-              classNames="slide"
+              classNames="slide-left"
             >
               <div ref={nodeRefLeft}>
                 <h4 className="uppercase">{role}</h4>
@@ -64,11 +64,12 @@ const Crew = () => {
             <CSSTransition
               nodeRef={nodeRefRight}
               key={value}
-              timeout={400}
-              classNames="fade-img"
+              timeout={500}
+              classNames="slide"
             >
               <div ref={nodeRefRight}>
                 <img src={images.webp} alt={name} />
+                <hr />
               </div>
             </CSSTransition>
           </SwitchTransition>
